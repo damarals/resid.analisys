@@ -29,7 +29,7 @@ C <- colRanks(S)
 ## vectors used
 
 # c is a [N x 1] vector which contains the most extreme 
-# rank value of the rows of C.
+# rank  value of the rows of C.
 c <- apply(C, 1, max)
 
 ## main loop
@@ -45,7 +45,8 @@ repeat {
   }
   k <- k + 1
 }
-
+D_theta <- D[-theta_k,]
+C_theta <- C[-theta_k,]
 
 
 
