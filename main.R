@@ -4,6 +4,10 @@
 #    using a simulation approach
 ########################################################
 
+## y simulate
+G <- chol(V)
+
+
 ## main function
 simulateResid <- function(S) {
   k <- 1 # first iteration
